@@ -1,38 +1,66 @@
+body {
+  background-color: #282c34;
+  color: white;
+  padding-bottom: 20px;
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  margin: auto 20px;
+  height: 80px;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  border-radius: 50%;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-width: 100vw;
+  height: 100px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  contain: layout;
+  position: relative;
+  align-items: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background-image: linear-gradient(45deg, rgb(120, 0, 0), rgb(50, 0, 0));
 }
 
-.App-link {
-  color: #61dafb;
+.r-link {text-decoration: none; display: flex; color: unset;}
+
+.App-header h1 {display: none;}
+
+.btn-addBook {
+  position: absolute;
+  margin: auto 20px;
+  width: max-content;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  float: right;
+  right: 5px;
+  border: solid;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-addBook:hover .outline-plus {
+  transform: scale(1.1);
+}
+
+.not-found {text-align: center;}
+
+.code-404 {
+  margin: 20px 0 0;
+  font-size: calc(5rem + 5vw);
+}
+
+.not-found h3 {margin-top: 0 !important}
+
+
+@media (min-width: 478px) {
+  .App-header h1 {display: block; margin: auto; text-align: center}
+  .btn-addBook {position: static}
 }

@@ -1,0 +1,8 @@
+.img-mini {
+    float: right;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    border-radius: 4px;
+    cursor: pointer;
+}

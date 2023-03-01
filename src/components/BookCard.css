@@ -1,0 +1,44 @@
+.book-card {
+    width: 250px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, .3) 0 2px 4px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+}
+
+.bc-options {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.fa-pen {
+    color: rgb(120, 0, 0);
+    cursor: pointer;
+}
+
+.img-book {
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+}
+
+.book-data h3 {
+    text-align: center;
+    font-weight: 700;
+}
+
+.book-data h3:not(:first-child) {
+    margin-top: 0;
+}
+
+.book-data h3:nth-child(1) {
+    margin-bottom: 0;
+}
+
+.book-data h5 {
+    margin: 0;
+    text-align: left;
+    font-weight: 400;
+    /* border: solid red 1px; */
+}

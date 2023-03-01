@@ -1,0 +1,53 @@
+.reading-wrapper {
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+    border: 2px solid;
+}
+
+.vertex {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.vertex .tl {
+    top: 0;
+    left: 0;
+    border-top: 15px solid white;
+    border-left: 15px solid white;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+
+.vertex .tr {
+    top: 0;
+    right: 0;
+    border-top: 15px solid white;
+    border-left: 15px solid transparent;
+    border-right: 15px solid white;
+    border-bottom: 15px solid transparent;
+}
+
+.vertex .bl {
+    bottom: 0;
+    left: 0;
+    border-top: 15px solid transparent;
+    border-left: 15px solid white;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid white;
+}
+
+.vertex .br {
+    bottom: 0;
+    right: 0;
+    border-top: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-right: 15px solid white;
+    border-bottom: 15px solid white;
+}
+
+.read-text {
+    margin: 40px;
+    font-weight: 400;
+}
